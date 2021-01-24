@@ -123,4 +123,91 @@ export default {
     background-color: #212121;
     color: #fff;
   }
+
+  main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .song-title {
+    color: #212121;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .song-title span {
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+    align-items: center;
+  }
+
+  button {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .play, .pause {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    background-color: #190061;
+    border-radius: .7rem;
+    margin: 0 1.5rem;
+  }
+
+  .next, .prev {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    background-color: #240090;
+    border-radius: .5rem;
+    margin: 0 1rem;
+  }
+
+  .playlist {
+    padding: 0 2rem;
+  }
+
+  .playlist h3 {
+    color: #212121;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1.3rem;
+  }
+
+  .playlist .song {
+    display: block;
+    width: 100%;
+    font-size: .9rem;
+    font-weight: 600;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .playlist .song:hover {
+    color: #3500d3;
+  }
+
+  .playlist .song.playing {
+    color: #fff;
+    background-image: linear-gradient(to right, #190061, #3500d3);
+  }
 </style>
